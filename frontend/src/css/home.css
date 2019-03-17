@@ -4,20 +4,23 @@
 }
 
 .body {
-  display: grid;
-  grid-template-columns: 35% 35% 35%;
-  grid-template-rows: 35% 35% 35%;
   background-image: url('./headphones1.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  position: fixed;
+  height:100%;
+  width:100%;
+  padding: 15px;
+  margin-left: -15px;
 }
 
 .title {
-  grid-column: 2;
-  grid-row: 2/3;
-  padding: 15px;
-  margin-top: 14px;
-  margin-left: -55px;
-  font-family: 'Baloo Chettan', cursive;
-  font-size: 105px;
-  text-align: center;
-  color: white;
+text-align: center;
+font-family: 'Baloo Chettan', cursive;
+font-size: 105px;
+color: white;
+margin-top: 175px;
+text-shadow: 2px 2px 4px #000000;
 }

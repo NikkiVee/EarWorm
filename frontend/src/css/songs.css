@@ -1,0 +1,25 @@
+.wholeSong {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  grid-template-rows: 30% 30% 30%;
+}
+
+.imgCont{
+  grid-column: 1;
+  grid-row: 1/3;
+  width: 30%;
+}
+
+.image {
+  width: 50px;
+}
+
+.artist {
+  grid-column: 2;
+  grid-row: 1/3;
+}
+
+.title {
+  grid-column: 2;
+  grid-row: 1/3;
+}

@@ -8,7 +8,8 @@ export default function Navbar() {
 
         <div className='navlinks'>
 
-          <li className='logo'>EARWORM REPORT</li>
+          <li className='logo'>E
+          <p className="r">R</p></li>
           <NavLink to={'/'} className='home'>
             HOME
           </NavLink>

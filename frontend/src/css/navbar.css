@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo+Chettan');
 
+.navbar {
+  margin-bottom: -33px;
+  text-shadow: 2px 2px 4px #000000;
+}
+
 .navlinks {
   display: grid;
   grid-template-columns: 49% 4% 6% 8% 5% 6%;
@@ -25,12 +30,20 @@ a:visited {
 }
 
 .logo {
-  margin-left: 7%;
+  margin-left: 10%;
   list-style-type: none;
   font-size: 40px;
   font-family: 'Baloo Chettan', cursive;
   margin-top: -2%;
   color: white;
+  text-shadow: 2px 2px 4px #000000;
+  /* transform: rotateY(180deg); */
+}
+
+.r{
+  transform: rotateY(180deg);
+  margin-right: 589px;
+  margin-top: -58px;
 }
 
 .home {
