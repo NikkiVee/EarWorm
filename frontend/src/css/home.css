@@ -1,1 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan');
 
+.home {
+}
+
+.body {
+  display: grid;
+  grid-template-columns: 35% 35% 35%;
+  grid-template-rows: 35% 35% 35%;
+  background-image: url('./headphones1.jpg');
+}
+
+.title {
+  grid-column: 2;
+  grid-row: 2/3;
+  padding: 15px;
+  margin-top: 14px;
+  margin-left: -55px;
+  font-family: 'Baloo Chettan', cursive;
+  font-size: 105px;
+  text-align: center;
+  color: white;
+}

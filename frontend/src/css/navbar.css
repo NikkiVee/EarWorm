@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan');
+
+.navlinks {
+  display: grid;
+  grid-template-columns: 49% 4% 6% 8% 5% 6%;
+  grid-column-gap: 3%;
+  font-size: 15px;
+  width: 101%;
+  height: 21%;
+  background-color: #3a01a3;
+  padding-top: 3%;
+  margin-right: -69%;
+  padding-bottom: 2%;
+  color: white;
+  font-family: 'Baloo Chettan', cursive;
+}
+
+a.navlinks {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+.logo {
+  margin-left: 7%;
+  list-style-type: none;
+  font-size: 40px;
+  font-family: 'Baloo Chettan', cursive;
+  margin-top: -2%;
+  color: white;
+}
+
+.home {
+  text-decoration: none;
+}
+
+.allSongs {
+  text-decoration: none;
+}
+
+.byPopularity {
+  text-decoration: none;
+}
+
+.byGenre {
+  text-decoration: none;
+}
+
+.profile {
+  text-decoration: none;
+}

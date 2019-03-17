@@ -1,30 +1,31 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import './css/navbar.css';
 
 export default function Navbar() {
   return (
-      <nav className="navbar">
+      <nav className='navbar'>
 
         <div className='navlinks'>
 
-          EARWORM REPORT
-          <NavLink to={'/'} className="home">
+          <li className='logo'>EARWORM REPORT</li>
+          <NavLink to={'/'} className='home'>
             HOME
           </NavLink>
 
-          <NavLink to={'/allSongs'} className="allSongs">
+          <NavLink to={'/allSongs'} className='allSongs'>
             ALL SONGS
           </NavLink>
 
-          <NavLink to={'/byPopularity'} className="byPopularity">
+          <NavLink to={'/byPopularity'} className='byPopularity'>
             BY POPULARITY
           </NavLink>
 
-          <NavLink to={'/byGenre'} className="byGenre">
+          <NavLink to={'/byGenre'} className='byGenre'>
             BY GENRE
           </NavLink>
 
-          <NavLink to={'/profile '} className="profile">
+          <NavLink to={'/profile '} className='profile'>
             MY PROFILE
           </NavLink>
         </div>
