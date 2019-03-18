@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Karla');
+
 .wholeSong {
   display: grid;
   grid-template-columns: 33% 34% 33%;
   grid-template-rows: 25% 25% 25% 25%;
   padding-bottom: 4%;
+  font-family: 'Karla', sans-serif;
 }
 
-.formCont {
+.skeletonCont {
 
 }
 
@@ -19,6 +22,7 @@
   margin-left: 596px;
   margin-top: 80px;
   margin-bottom: 53px;
+  padding-left: 1%;
 }
 
 .imgCont{
@@ -31,16 +35,50 @@
   width: 265px;
 }
 
+.infoCont{
+  grid-column: 2;
+  grid-row: 2;
+  margin-top: 5%;
+  margin-left: 20%;
+  margin: 0%;
+  border-radius: 2px;
+  border-style: solid;
+  border-width: thin;
+  background-color: rgba(28, 78, 227, 0.3);
+}
+
 .artistTitleCont {
   grid-column: 2;
   grid-row: 2;
   list-style: none;
+  margin-top: 3%;
+  margin-left: 3%
 }
 
 .countCont {
   grid-column: 2;
   grid-row: 2;
   list-style: none;
+  margin-top: 2%;
+  margin-right: 5%;
+}
+
+.heartCont {
+  margin-left: 450px;
+  margin-top: -4%;
+}
+
+#toggle-heart {
+  position: absolute;
+  left: -100vw;
+  color: #aab8c2;
+  font-size: 2em;
+  cursor: pointer;
+  align-self: center;
+}
+
+.toggle-heart:checked + label {
+  color: #e2264d;
 }
 
 .artist {
@@ -48,12 +86,14 @@
 }
 
 .count {
-  font-weight: 700;
-  margin-left: 40%;
+  font-weight: 500;
+  margin-left: 77%;
+  margin-top: -8%;
 }
 
 .commentCont {
   grid-column: 2;
   grid-row: 3;
   list-style: none;
+  margin-top: 10%;
 }

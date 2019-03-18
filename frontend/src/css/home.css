@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
 
 .home {
 }
@@ -14,12 +14,13 @@
   width:100%;
   padding: 15px;
   margin-left: -15px;
+  padding-top: 45px;
 }
 
 .title {
 text-align: center;
-font-family: 'Baloo Chettan', cursive;
-font-size: 105px;
+font-family: 'Oswald', sans-serif;
+font-size: 800%;
 color: white;
 margin-top: 175px;
 text-shadow: 2px 2px 4px #000000;

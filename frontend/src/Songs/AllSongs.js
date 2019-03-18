@@ -13,18 +13,23 @@ export const AllSongs = (props) => {
               <img src={song.song_url} alt='' className='image'/>
             </div>
 
-            
-            <div className='artistTitleCont'>
-              <li className='artist'>{song.artist}</li>
-              <li className='songTitle'>{song.title}</li>
-            </div>
+            <div className='infoCont'>
+              <div className='artistTitleCont'>
+                <li className='artist'>{song.artist}</li>
+                <li className='songTitle'>{song.title}</li>
+              </div>
 
-            <div className='countCont'>
-              <li className='count'>{song.count} Favorites</li>
-            </div>
+              <div className='countCont'>
+                <li className='count'>{song.count} Favorites</li>
+                <div className='heartCont'>
+                  <input id="toggle-heart" type="checkbox" />
+                  <label for="toggle-heart">❤</label>
+                </div>
+              </div>
 
-            <div className='commentCont'>
-              <li>"{song.comment_body}"</li>
+              <div className='commentCont'>
+                <li>"{song.comment_body}"</li>
+              </div>
             </div>
 
           </div>
@@ -37,17 +42,18 @@ export const AllSongs = (props) => {
   return(
     <>
 
-        <form onSubmit={props.handleSubmit}
-              className='formCont'>
-          <input type='text'
-                 value={props.songInput}
-                 onChange={props.handleChange}
-                 placeholder='Search By Artist'
-                 className='inputCont'/>
-        </form>
+        <div className='skeletonCont'>
+          <form onSubmit={props.handleSubmit}>
+            <input type='text'
+                   value={props.songInput}
+                   onChange={props.handleChange}
+                   placeholder='Search By Artist'
+                   className='inputCont'/>
+          </form>
+
 
         {allSongs}
-
+      </div>
     </>
   )
 }

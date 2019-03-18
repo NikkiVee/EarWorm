@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
 
 .navbar {
   margin-bottom: -33px;
@@ -10,14 +11,15 @@
   grid-template-columns: 49% 4% 6% 8% 5% 6%;
   grid-column-gap: 3%;
   font-size: 15px;
+  font-weight: 900;
+  font-family: 'Oswald', sans-serif;
+  color: white;
   width: 101%;
   height: 21%;
   background-color: #3a01a3;
-  padding-top: 3%;
+  padding-top: 2%;
   margin-right: -69%;
-  padding-bottom: 2%;
-  color: white;
-  font-family: 'Baloo Chettan', cursive;
+
 }
 
 a.navlinks {
@@ -29,21 +31,24 @@ a:visited {
   color: white;
 }
 
+.logoLink {
+  text-decoration: none;
+}
+
 .logo {
   margin-left: 10%;
   list-style-type: none;
   font-size: 40px;
-  font-family: 'Baloo Chettan', cursive;
-  margin-top: -2%;
+  font-family: 'Oswald', sans-serif;
+  margin-top: -3%;
   color: white;
   text-shadow: 2px 2px 4px #000000;
-  /* transform: rotateY(180deg); */
 }
 
 .r{
   transform: rotateY(180deg);
-  margin-right: 589px;
-  margin-top: -58px;
+  margin-right: 598px;
+  margin-top: -60px;
 }
 
 .home {
