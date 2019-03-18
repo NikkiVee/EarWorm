@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Karla');
 
-.wholeSong {
+.wholePop {
   display: grid;
   grid-template-columns: 33% 34% 33%;
   grid-template-rows: 25% 25% 25% 25%;
@@ -8,34 +8,17 @@
   font-family: 'Karla', sans-serif;
 }
 
-.skeletonCont {
-
-}
-
-.inputCont {
-  grid-column: 2;
-  grid-row: 1;
-  width: 240px;
-  height: 29px;
-  font-size: 17px;
-  font-variant-caps: all-small-caps;
-  margin-left: 596px;
-  margin-top: 80px;
-  margin-bottom: 53px;
-  padding-left: 1%;
-}
-
-.imgCont{
+.imgPopCont{
   grid-column: 1;
   grid-row: 2;
   margin-left: 30%;
 }
 
-.image {
+.imagePop {
   width: 265px;
 }
 
-.infoCont{
+.infoPopCont{
   grid-column: 2;
   grid-row: 2;
   margin-top: 5%;
@@ -47,7 +30,7 @@
   background-color: rgba(231, 235, 78, 1);
 }
 
-.artistTitleCont {
+.artistTitlePop {
   grid-column: 2;
   grid-row: 2;
   list-style: none;
@@ -55,11 +38,11 @@
   margin-left: 3%
 }
 
-.artist {
+.artistPop {
   font-weight: 700;
 }
 
-.countCont {
+.countPopCont {
   grid-column: 2;
   grid-row: 2;
   list-style: none;
@@ -67,18 +50,18 @@
   margin-right: 5%;
 }
 
-.count {
+.countPop {
   font-weight: 500;
   margin-left: 77%;
   margin-top: -8%;
 }
 
-.heartCont {
+.heartPopCont {
   margin-left: 450px;
   margin-top: -4%;
 }
 
-#toggle-heart {
+#toggle-pop-heart {
   position: absolute;
   left: -100vw;
   color: #aab8c2;
@@ -87,13 +70,20 @@
   align-self: center;
 }
 
-.toggle-heart:checked + label {
+.toggle-pop-heart:checked + label {
   color: #e2264d;
 }
 
-.commentCont {
+.commentPopCont {
   grid-column: 2;
   grid-row: 3;
   list-style: none;
   margin-top: 10%;
+}
+
+.popHeader {
+  margin-left: 33%;
+  margin-top: 6%;
+  font-family: 'Karla', sans-serif;
+  font-weight: 100;
 }

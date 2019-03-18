@@ -16,7 +16,7 @@ export const AllSongs = (props) => {
             <div className='infoCont'>
               <div className='artistTitleCont'>
                 <li className='artist'>{song.artist}</li>
-                <li className='songTitle'>{song.title}</li>
+                <li>{song.title}</li>
               </div>
 
               <div className='countCont'>

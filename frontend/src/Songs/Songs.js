@@ -4,7 +4,7 @@ import axios from 'axios'
 import Navbar from '../Navbar'
 import { AllSongs } from './AllSongs'
 
-export default class Movies extends Component {
+export default class Songs extends Component {
   constructor() {
     super();
     this.state = {
@@ -43,6 +43,7 @@ export default class Movies extends Component {
       <>
 
         <Navbar/>
+
         <AllSongs songs={this.state.songs}
                   songInput={this.state.songInput}
                   handleSubmit={this.handleSubmit}
