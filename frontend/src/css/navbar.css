@@ -19,7 +19,6 @@
   background-color: #3a01a3;
   padding-top: 2%;
   margin-right: -69%;
-
 }
 
 a.navlinks {
@@ -49,6 +48,7 @@ a:visited {
   transform: rotateY(180deg);
   margin-right: 598px;
   margin-top: -60px;
+  margin-bottom: 1%;
 }
 
 .home {
