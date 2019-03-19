@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import Home from './Home/Home';
 import Songs from './Songs/Songs';
 import ByPop from './Pop/ByPop';
+import Genres from './Gen/Genres';
 
 class App extends Component {
   render() {
@@ -15,6 +16,8 @@ class App extends Component {
           <Route path="/allSongs" component={Songs} />
 
           <Route path="/byPopularity" component={ByPop}/>
+
+          <Route path="/byGenre" component={Genres}/>
 
           </Switch>
       </div>
