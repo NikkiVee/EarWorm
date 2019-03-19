@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Karla');
+
+.selectBar {
+  width: 15%;
+  height: 28px;
+  font-size: 15px;
+  margin-left: 42%;
+}
+
+select {
+}
+
+.genreHeader {
+  margin-left: 35%;
+  margin-top: 6%;
+  font-family: 'Karla', sans-serif;
+  font-weight: 100;
+}
+
+.button {
+  margin-left: 46%;
+    margin-top: 2%;
+    background-color: #f41eb9;
+    color: white;
+    padding: 8px 14px;
+    text-align: center;
+    font-size: 13px;
+    opacity: 0.6;
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 2px;
+    font-family: 'Karla', sans-serif;
+}
+
+.button:hover {
+  opacity: 1
+}

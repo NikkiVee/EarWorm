@@ -45,7 +45,7 @@ export default function GenresDisplay(props) {
 
   return(
     <>
-      <h1 className='popHeader'> Check Out Your Favorite Genres </h1>
+      <h1 className='genreHeader'> Check Out Your Favorite Genres </h1>
 
       <form onSubmit={props.handleGenreSubmit}>
         <select name="selectedGenre"
@@ -57,7 +57,7 @@ export default function GenresDisplay(props) {
           {genreList}
         </select>
         <br/>
-        <button type='submit' className="button">Choose Genre</button>
+        <button type='submit' className="button">CHOOSE GENRE</button>
       </form>
 
       {allGenres}
