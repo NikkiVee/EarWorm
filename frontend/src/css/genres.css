@@ -19,17 +19,17 @@ select {
 
 .button {
   margin-left: 46%;
-    margin-top: 2%;
-    background-color: #f41eb9;
-    color: white;
-    padding: 8px 14px;
-    text-align: center;
-    font-size: 13px;
-    opacity: 0.6;
-    transition: 0.3s;
-    cursor: pointer;
-    border-radius: 2px;
-    font-family: 'Karla', sans-serif;
+  margin-top: 2%;
+  background-color: #f41eb9;
+  color: white;
+  padding: 8px 14px;
+  text-align: center;
+  font-size: 13px;
+  opacity: 0.6;
+  transition: 0.3s;
+  cursor: pointer;
+  border-radius: 2px;
+  font-family: 'Karla', sans-serif;
 }
 
 .button:hover {
