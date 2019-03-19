@@ -1,9 +1,9 @@
 import React from 'react'
-// import '../css/genres.css';
+import '../css/genres.css';
 
 export default function GenresDisplay(props) {
-  if(!props.genres) return null
-  let allGenres = props.genres.map((genre, i) => {
+  if(!props.genreInfo) return null
+  let allGenres = props.genreInfo.map((genre, i) => {
     return(
       <div>
         <div className='wholePop'>
@@ -35,9 +35,31 @@ export default function GenresDisplay(props) {
       </div>
     )
   })
+
+  let genreList = props.genres.map(genre => {
+    return(
+      <option name="selectedGenre" value={genre.id}>{genre.genre_name}</option>
+    )
+  })
+
+
   return(
     <>
-      <h1 className='popHeader'> Check Out Your Favorite Geners </h1>
+      <h1 className='popHeader'> Check Out Your Favorite Genres </h1>
+
+      <form onSubmit={props.handleGenreSubmit}>
+        <select name="selectedGenre"
+                className="selectBar"
+                onChange={props.handleChange}>
+          <option key='0'
+                  value=''
+                  className="optionBar"></option>
+          {genreList}
+        </select>
+        <br/>
+        <button type='submit' className="button">Choose Genre</button>
+      </form>
+
       {allGenres}
     </>
   )
