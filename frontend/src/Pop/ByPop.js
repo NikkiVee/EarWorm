@@ -23,6 +23,7 @@ export default class ByPop extends Component {
     });
   };
   render() {
+    // remember, I'm playing your interviewer, and this is a coding challenge :)
     console.log("Fuck", this.state.pop)
     return (
       <>

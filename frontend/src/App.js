@@ -6,6 +6,7 @@ import ByPop from './Pop/ByPop';
 import Genres from './Gen/Genres';
 
 class App extends Component {
+  // consolidating the song routes into one gives you the ability to pass props between them - not required, just a thought
   render() {
     return (
       <div className="App">

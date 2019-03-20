@@ -38,6 +38,10 @@ export default class Songs extends Component {
     // this.state.history.push(`/songs/{song.id}`)
   }
 
+  // I think the search should actually be by title rather than by artist here. Also, the instructions ask for a "submit" button. This might be why your "handleSubmit" function was never firing - you don't have a button to trigger the submit functionality for the form
+
+  // Also, your songs are going to look the same between your Songs, Pop, and Gen folders -- is there a way we can modularize this to reuse the code you're using in the AllSongs component?
+
   render() {
     return (
       <>
