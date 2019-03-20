@@ -1,7 +1,9 @@
-DROP DATABASE IF EXISTS ear_worm;
-CREATE DATABASE ear_worm;
+DROP DATABASE IF EXISTS earworm;
+CREATE DATABASE earworm;
 
-\c ear_worm
+-- Just changing this to fit my db name
+
+\c earworm
 
 CREATE TABLE users (
   id SERIAL PRIMARY KEY,

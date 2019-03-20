@@ -1,5 +1,7 @@
 const { db } = require('../index.js');
 
+// So, a lot of your queries in "Favorites" and "Genres" are actually Songs queries with Genres/Favorites as an organizing principle. This leads to redundancy as well as confusion, because if I'm queying a /favorites route, I expect Favorites objects, not Songs. Can we refactor this so these endpoints are in the Songs query section?
+
 const getAllGenres = (req, res, next) => {
   db.any('SELECT * FROM genres')
   .then(genres => {
