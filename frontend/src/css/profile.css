@@ -1,13 +1,14 @@
 .greeting {
-  margin-left: 32%;
+  margin-left: 30%;
   margin-top: 6%;
   font-family: 'Karla', sans-serif;
   font-weight: 100;
 }
 
+
 .postedTab {
   margin-top: 2%;;
-  margin-left: 32%;
+  margin-left: 30%;
   font-family: 'Karla', sans-serif;
   font-weight: 500;
   width: 16%;
@@ -19,7 +20,7 @@
 
 .favoritesTab {
   margin-top: 2%;
-  margin-left: 5%;
+  margin-left: 6%;
   font-family: 'Karla', sans-serif;
   font-weight: 500;
   width: 16%;
@@ -34,6 +35,54 @@
   margin-left: 38px;
   margin-right: 38px;
   padding-bottom: 66px;
+  padding-top: 2%
+}
+
+.addSong {
+  background-color: rgba(255, 0, 186, 0.05);
+  margin-left: 29%;
+  margin-right: 31%;
+  padding-bottom: 1%;
+}
+
+.postAnother {
+  font-family: 'Karla', sans-serif;
+  margin-left: 33%;
+  font-variant-caps: all-small-caps;
+  font-size: 26px;
+}
+
+.songName {
+  margin-top: -8px;
+  margin-left: 32%;
+  padding-left: 37px;
+  width: 145px;
+  height: 27px;
+  font-size: 13px;
+  font-variant-caps: all-small-caps;
+
+}
+
+.songURL {
+  margin-left: 32%;
+  padding-left: 43px;
+  width: 140px;
+  height: 27px;
+  font-size: 13px;
+  font-variant-caps: all-small-caps;
+}
+
+.addButton {
+  margin-top: 6px;
+  margin-left: 42%;
+  height: 22px;
+  width: 72px;
+  background-color: rgba(255, 74, 248, 0.87);
+  opacity: 0.8;
+}
+
+.addButton:hover{
+  opacity: 1;
 }
 
 .profileCont {

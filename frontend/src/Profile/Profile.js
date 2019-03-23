@@ -40,7 +40,7 @@ export default class Profile extends Component {
         <Navbar/>
 
         <ProfileInfo singleUser={this.state.singleUser}
-                     singleSongs={this.state.singleSongs}/>
+        singleSongs={this.state.singleSongs}/>
 
       </>
     );

@@ -51,6 +51,15 @@ export const ProfileInfo = (props) => {
 
         <button className='postedTab'>YOUR POSTED SONGS</button> <button className='favoritesTab'>YOUR FAVES</button>
           <div className="whole">
+            <div className='addSong'>
+              <h3 className="postAnother">Post Another Song</h3>
+                <input placeholder='Enter Song Name' className='songName'/>
+              <br/>
+                <input placeholder='Enter Song URL'className='songURL'/>
+              <br/>
+              <button className='addButton'>Add Song</button>
+            </div>
+
            {songInfo}
            </div>
       </div>
