@@ -4,6 +4,7 @@ import Home from './Home/Home';
 import Songs from './Songs/Songs';
 import ByPop from './Pop/ByPop';
 import Genres from './Gen/Genres';
+import Profile from './Profile/Profile';
 
 class App extends Component {
   render() {
@@ -18,6 +19,8 @@ class App extends Component {
           <Route path="/byPopularity" component={ByPop}/>
 
           <Route path="/byGenre" component={Genres}/>
+
+          <Route path="/profile" component={Profile}/>
 
           </Switch>
       </div>

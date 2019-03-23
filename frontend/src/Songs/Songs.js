@@ -9,7 +9,7 @@ export default class Songs extends Component {
     super();
     this.state = {
       songs: [],
-      songInput: ''
+      songInput: '',
     };
   }
 

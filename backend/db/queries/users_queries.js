@@ -13,7 +13,7 @@ const getAllUsers = (req, res, next) => {
 };
 
 const getSingleUser = (req, res, next) => {
-  db.one('SELECT * FROM users WHERE id=$1', [Number(req.params.id)])
+  db.any('SELECT * FROM users WHERE users.id=$1', [Number(req.params.id)])
   .then(users => {
     res.status(200).json({
       status: 'success',

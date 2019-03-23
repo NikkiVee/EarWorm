@@ -4,7 +4,7 @@ import '../css/songs.css';
 export const AllSongs = (props) => {
   if(!props.songs) return null
   let allSongs = props.songs.map((song, i) => {
-    if(song.artist.toLowerCase().indexOf(props.songInput.toLowerCase()) === 0){
+    if(song.title.toLowerCase().indexOf(props.songInput.toLowerCase()) === 0){
     return(
         <div>
           <div className='wholeSong'>
@@ -28,7 +28,7 @@ export const AllSongs = (props) => {
               </div>
 
               <div className='commentCont'>
-                <li>"{song.comment_body}"</li>
+                <li>"{song.array_agg}"</li>
               </div>
             </div>
 
@@ -47,7 +47,7 @@ export const AllSongs = (props) => {
             <input type='text'
                    value={props.songInput}
                    onChange={props.handleChange}
-                   placeholder='Search By Artist'
+                   placeholder='Search By Title'
                    className='inputCont'/>
           </form>
 

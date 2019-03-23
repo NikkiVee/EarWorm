@@ -1,7 +1,7 @@
 const { db } = require('../index.js');
 
 const getAllSongs = (req, res, next) => {
-  db.any('SELECT COUNT(favorites.song_id), songs.id, songs.user_id, artist, title, song_url, comments.comment_body FROM songs LEFT JOIN comments ON songs.id=comments.song_id  LEFT JOIN favorites ON favorites.song_id=comments.song_id GROUP BY songs.id, comments.comment_body ORDER BY comments.comment_body DESC')
+  db.any('SELECT COUNT(favorites.song_id), songs.id, songs.user_id, artist, title, song_url, ARRAY_AGG(DISTINCT comment_body) FROM songs LEFT JOIN comments ON songs.id=comments.song_id  LEFT JOIN favorites ON favorites.song_id=comments.song_id GROUP BY songs.id, comments.comment_body ORDER BY comments.comment_body DESC')
   .then(songs => {
     res.status(200).json({
       status: 'success',
@@ -55,7 +55,7 @@ const getSongsFromGenre = (req, res, next) => {
 
 const getSongsFromUser = (req, res, next) => {
   [Number(req.params.id)];
-  db.any('SELECT username, artist, title, song_url FROM songs JOIN users ON songs.user_id=users.id WHERE users.id=$1',
+  db.any('SELECT COUNT(favorites.song_id), songs.id, songs.user_id, artist, title, song_url, ARRAY_AGG(DISTINCT comment_body) FROM songs LEFT JOIN comments ON songs.id=comments.song_id  LEFT JOIN favorites ON favorites.song_id=comments.song_id WHERE songs.user_id=$1 GROUP BY songs.id, comments.comment_body',
   [Number(req.params.id)])
   .then(data => {
     res.status(200).json({
