@@ -4,6 +4,8 @@ import axios from 'axios'
 import Navbar from '../Navbar'
 import { ProfileInfo } from './ProfileInfo'
 
+// so this component hard-codes to get the logged-in user. How can we generalize this to get the selected user if we want to look at their profile?
+
 export default class Profile extends Component {
   constructor() {
     super();
@@ -28,6 +30,7 @@ export default class Profile extends Component {
   getSongsFromUser = () => {
     axios.get('/songs/users/1')
     .then(res => {
+      console.log(res.data.data)
       this.setState({ singleSongs: res.data.data });
     });
   };

@@ -1,6 +1,8 @@
 import React from 'react'
 import '../css/songs.css';
 
+// How can we modify this slightly to add favorites? Also, is there a way we could reuse some of this presentational logic by farming it out to different components? For example, singleSong?
+
 export const AllSongs = (props) => {
   if(!props.songs) return null
   let allSongs = props.songs.map((song, i) => {
